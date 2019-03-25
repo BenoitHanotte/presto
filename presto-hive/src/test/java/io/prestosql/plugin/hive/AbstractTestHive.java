@@ -758,6 +758,7 @@ public abstract class AbstractTestHive
                 hiveConfig.getMaxPartitionBatchSize(),
                 hiveConfig.getMaxInitialSplits(),
                 hiveConfig.getSplitLoaderConcurrency(),
+                hiveConfig.getMaxSplitsPerSec(),
                 false);
         pageSinkProvider = new HivePageSinkProvider(
                 getDefaultHiveFileWriterFactories(hiveConfig),
